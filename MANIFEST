@@ -1,0 +1,8 @@
+Changes
+Makefile.PL
+MANIFEST
+ppport.h
+strptime.xs
+t/POSIX-strptime.t
+lib/POSIX/strptime.pm
+META.yml                                 Module meta-data (added by MakeMaker)
