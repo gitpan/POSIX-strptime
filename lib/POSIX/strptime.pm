@@ -6,7 +6,7 @@ use strict;
 use XSLoader;
 use vars qw($VERSION);
 
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 XSLoader::load 'POSIX::strptime', $VERSION;
 
@@ -44,6 +44,7 @@ strptime(3)
 =head1 AUTHOR
 
 Philippe M. Chiasson E<lt>gozer@cpan.orgE<gt>
+Kim Scheibel E<lt>kim@scheibel.co.ukE<gt>
 
 =head1 REPOSITORY
 
