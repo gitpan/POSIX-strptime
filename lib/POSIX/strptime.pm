@@ -6,7 +6,7 @@ use strict;
 use XSLoader;
 use vars qw($VERSION);
 
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 XSLoader::load 'POSIX::strptime', $VERSION;
 
@@ -17,7 +17,7 @@ __END__
 
 =head1 NAME
 
-POSIX::strptime
+POSIX::strptime - Perl extension to the POSIX date parsing strptime(3) function
 
 =head1 SYNOPSIS
 
