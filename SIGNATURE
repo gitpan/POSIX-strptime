@@ -1,0 +1,33 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.38.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It would check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 23868084dedccd07ad5ded91f21ed5b4ff279223 Changes
+SHA1 190789411071f334419f731ae8af46f9992fa97f MANIFEST
+SHA1 8092c4f8a57d012d25049d34177f156c192187d7 MANIFEST.SKIP
+SHA1 5603af2260984d65c31b0b7108e166a2f6608b9f META.yml
+SHA1 434d83c1e9ae3b789508dd1a05192997b71df0fd Makefile.PL
+SHA1 40e3022910c3ffddd9f1dc12309f41ec4a8aae38 lib/POSIX/strptime.pm
+SHA1 408412c1c66aaa27fb46f1c71519081c7d50bf2c ppport.h
+SHA1 f3ea0ef49e441e5e04c911d71645710bb0616d4d strptime.xs
+SHA1 e84b212ac2a465c56266c9bb2d3b1f8016ac4b21 t/00-signature.t
+SHA1 e0e1204fb8b42e7e866c352b9c4af6b6316b3eca t/POSIX-strptime.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.2.6 (GNU/Linux)
+
+iD8DBQFCJQt4yzKhB4jDpaURAp4ZAJ9f7oLOTcznF4VgMKfwsAlFUw+uLwCfXgi0
+8vzidRMLD6f+IMFUMKcRj3o=
+=0iQm
+-----END PGP SIGNATURE-----

@@ -1,8 +1,11 @@
 Changes
 Makefile.PL
 MANIFEST
+MANIFEST.SKIP
+SIGNATURE
 ppport.h
 strptime.xs
 t/POSIX-strptime.t
+t/00-signature.t
 lib/POSIX/strptime.pm
 META.yml                                 Module meta-data (added by MakeMaker)
