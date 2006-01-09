@@ -1,21 +1,23 @@
-# Before `make install' is performed this script should be runnable with
-# `make test'. After `make install' it should work as `perl POSIX-strptime.t'
-
-#########################
-
-# change 'tests => 1' to 'tests => last_test_to_print';
+use strict;
+use warnings FATAL => 'all';
 
 use Test::More;
-plan tests => 2;
+plan tests => 5;
 use_ok('POSIX::strptime');
 
-#########################
 
-# Insert your test code below, the Test::More module is use()ed here so read
-# its man page ( perldoc Test::More ) for help writing this test script.
+while(my $rec = <DATA>) {
+    chomp $rec;
+    my($dstr, $fstr, $rstr) = split('\|', $rec);
 
-my @exp = qw(34 32 10 4 1 105 5 34);
+    my @target_ret = map { $_ eq 'undef' ? undef : $_ } split(' ', $rstr);
 
-my @ret = POSIX::strptime("2005-02-04 10:32:34 UTC", "%F %T %Z");
+    my @ret = POSIX::strptime($dstr, $fstr);
 
-ok eq_array(\@ret, \@exp);
+    is_deeply(\@ret, \@target_ret, $rec);
+}
+__DATA__
+2005-02-04 10:32:34 UTC|%F %T %Z|34 32 10 4 1 105 5 34
+2005-02-04|%F|undef undef undef 4 1 105 5 34
+10:32:34|%H:%M:%S|34 32 10 undef undef undef undef undef
+blah blah|%H:%M:%S|undef undef undef undef undef undef undef undef

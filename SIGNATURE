@@ -1,12 +1,12 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.38.
+signed via the Module::Signature module, version 0.51.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
 
     % cpansign -v
 
-It would check each file's integrity, as well as the signature's
+It will check each file's integrity, as well as the signature's
 validity.  If "==> Signature verified OK! <==" is not displayed,
 the distribution may already have been compromised, and you should
 not run its Makefile.PL or Build.PL.
@@ -14,20 +14,20 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 23868084dedccd07ad5ded91f21ed5b4ff279223 Changes
+SHA1 6723bf643d1d023ce646d0c4426abe455e2dd400 Changes
 SHA1 190789411071f334419f731ae8af46f9992fa97f MANIFEST
 SHA1 8092c4f8a57d012d25049d34177f156c192187d7 MANIFEST.SKIP
-SHA1 e643623ddc714b6d692a890be6f8c001325a139c META.yml
+SHA1 bbaf62e7eb11e7784fd3e6d81c5f9df128635e17 META.yml
 SHA1 38ecce31ab559a96268c8cdd6fb6fa753d8b9275 Makefile.PL
-SHA1 a5ac95b89c5601e8d609f771a11a0fede25a2ab1 lib/POSIX/strptime.pm
+SHA1 16e13f262068a6ad3122938c0c7a98d74c74b6d6 lib/POSIX/strptime.pm
 SHA1 408412c1c66aaa27fb46f1c71519081c7d50bf2c ppport.h
-SHA1 f3ea0ef49e441e5e04c911d71645710bb0616d4d strptime.xs
+SHA1 082c468293b7c30d0350393181499164565dff60 strptime.xs
 SHA1 e84b212ac2a465c56266c9bb2d3b1f8016ac4b21 t/00-signature.t
-SHA1 e0e1204fb8b42e7e866c352b9c4af6b6316b3eca t/POSIX-strptime.t
+SHA1 bd71e8ece1ce29d663c24a823144c4df9ed5dc89 t/POSIX-strptime.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.2.6 (GNU/Linux)
+Version: GnuPG v1.4.1 (GNU/Linux)
 
-iD8DBQFCLfL0yzKhB4jDpaURAqP9AJ47HEoou07o0MqKDByAV4mWKfH+ugCfaH43
-lVfHQSFJB2Zor2htq2zLGdw=
-=MVZ6
+iD8DBQFDwfxoxTmzvcMq82YRArtDAKCwGm0rhRxGlt73CvkSf1r16YvViwCgrEym
+4oi+GLQvGbziBUc9ux3LhN0=
+=iC4o
 -----END PGP SIGNATURE-----

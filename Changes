@@ -1,5 +1,9 @@
 Revision history for Perl extension POSIX::strptime.
 
+0.06  Sun Jan  8 21:35:51 PST 2006
+    - return undef for atoms unset by the underlying strptime(3)
+        (thanks to Bjarne Büchmann for suggesting this fix)
+
 0.01  Tue Mar  1 10:54:16 2005
 	- original version; created by h2xs 1.23 with options
 		-b 5.0.0 -A -c -n POSIX::strptime

@@ -6,7 +6,7 @@ use strict;
 use XSLoader;
 use vars qw($VERSION);
 
-$VERSION = '0.05';
+$VERSION = '0.06';
 
 XSLoader::load 'POSIX::strptime', $VERSION;
 
@@ -34,6 +34,8 @@ Perl interface to strptime(3)
 =item strptime
 
 ($sec, $min, $hour, $mday, $mon, $year, $wday, $yday) = POSIX::strptime(string, format);
+
+Returns undef for any value not successfully extracted
 
 =back
 
