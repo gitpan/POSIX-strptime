@@ -4,9 +4,12 @@ use 5.000;
 use strict;
 
 use XSLoader;
-use vars qw($VERSION);
+use vars qw($VERSION @ISA @EXPORT_OK);
 
-$VERSION = '0.06';
+$VERSION = '0.07';
+
+require Exporter;
+@ISA = qw(Exporter);
 
 XSLoader::load 'POSIX::strptime', $VERSION;
 
