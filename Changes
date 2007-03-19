@@ -1,5 +1,8 @@
 Revision history for Perl extension POSIX::strptime.
 
+0.08 Mon Mar 19 12:32:35 PDT 2007
+    - fix Exporter bug
+
 0.07 Sun Mar 18 23:38:59 PDT 2007
     - use Exporter
 

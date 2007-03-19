@@ -6,7 +6,7 @@
 
 #include <time.h>
 
-MODULE = POSIX::strptime		PACKAGE = POSIX
+MODULE = POSIX::strptime		PACKAGE = POSIX::strptime
 
 void
 strptime(input, format)

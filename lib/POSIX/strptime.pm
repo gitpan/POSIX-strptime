@@ -6,12 +6,17 @@ use strict;
 use XSLoader;
 use vars qw($VERSION @ISA @EXPORT_OK);
 
-$VERSION = '0.07';
+$VERSION = '0.08';
 
 require Exporter;
 @ISA = qw(Exporter);
+@EXPORT_OK = qw(strptime);
 
-XSLoader::load 'POSIX::strptime', $VERSION;
+XSLoader::load __PACKAGE__, $VERSION;
+
+if (not defined &POSIX::strptime) {
+    *POSIX::strptime = \&strptime;
+}
 
 # Preloaded methods go here.
 

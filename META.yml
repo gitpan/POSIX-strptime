@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                POSIX-strptime
-version:             0.07
+version:             0.08
 abstract:            Perl extension to the POSIX date parsing strptime(3) function
 license:             ~
 generated_by:        ExtUtils::MakeMaker version 6.31
