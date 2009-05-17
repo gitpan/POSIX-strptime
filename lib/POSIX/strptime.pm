@@ -6,7 +6,7 @@ use strict;
 use XSLoader;
 use vars qw($VERSION @ISA @EXPORT_OK);
 
-$VERSION = '0.08';
+$VERSION = '0.09';
 
 require Exporter;
 @ISA = qw(Exporter);
